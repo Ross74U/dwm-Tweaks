@@ -4,10 +4,10 @@
 - full-gap
 
 ## custom patches
-- fullscreen monocle toggle with ```MODKEY + m```
-to use bind to ```toggle_auto_nmaster```
+- fullscreen monocle toggle 
+to use bind to ```toggle_auto_nmaster```, default ```MODKEY + m```
 - auto master mode (automatically adjust monitor nmaster based on client count
-instead of manually adjusting with incnmaster), configurable with masters in
+instead of manually adjusting with ```incnmaster```), configurable in
 config.h
 
 ```c
@@ -22,4 +22,4 @@ static const int mastermapping[] = {
   // past this just nclients/2
 };
 ```
-to use bind to ```toggle_auto_nmaster```
+to use bind to ```toggle_auto_nmaster```, default ```MODKEY + t```
