@@ -6,7 +6,7 @@
 ## custom patches
 - fullscreen monocle toggle 
 to use bind to ```toggle_auto_nmaster```, default ```MODKEY + m```
-- auto master mode (automatically adjust monitor nmaster based on client count
+- auto nmaster mode (automatically adjust monitor ```nmaster``` based on client count
 instead of manually adjusting with ```incnmaster```), configurable in
 ```config.h```
 
