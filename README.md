@@ -1,9 +1,9 @@
 # dwm Tweaks
-## patches
+## included patches
 - visible border
 - full-gap
 
-## completely custom patches
+## custom patches
 - fullscreen monocle toggle with ```MODKEY + m```
 to use bind to ```toggle_auto_nmaster```
 - auto master mode (automatically adjust monitor nmaster based on client count
