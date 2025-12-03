@@ -1,4 +1,6 @@
 # dwm Tweaks
+Suckless custom dwm patches enabling auto nmaster adjustment and better fullscreen toggle
+Maybe I'll release as .diff patches at some point.
 ## included patches
 - visible border
 - full-gap
