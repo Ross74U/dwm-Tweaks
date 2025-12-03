@@ -8,7 +8,7 @@ Maybe I'll release these as .diff patches at some point.
 
 ## custom patches
 - fullscreen monocle toggle 
-to use bind to ```toggle_auto_nmaster```, default ```MODKEY + m```
+to use bind to ```togglemono```, default ```MODKEY + m```
 - auto nmaster mode (automatically adjust monitor ```nmaster``` based on client count
 instead of manually adjusting with ```incnmaster```), configurable in
 ```config.h```
