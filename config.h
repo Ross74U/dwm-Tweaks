@@ -129,7 +129,7 @@ static const Button buttons[] = {
 };
 
 
-/* auto_nmaster mappings */
+/* master mappings */
 static const int mastermapping[] = {
   1, // nclient=0
   1, // nclient=1
