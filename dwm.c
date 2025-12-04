@@ -704,7 +704,8 @@ dirtomon(int dir)
 }
 
 void 
-format_mode(Monitor *m, char *buf, size_t bufsz) {
+format_mode(Monitor *m, char *buf, size_t bufsz)
+{
     if (m->auto_nmaster == 1) {
       snprintf(buf, bufsz, "%s master auto", m->ltsymbol);
     } else {
@@ -2187,13 +2188,12 @@ zoom(const Arg *arg)
 	pop(c);
 }
 
-static const Layout mono_layout = { "Mono", monocle };
-static const Layout tiling_layout = { "Tiling", tile };
-static const Arg mono_layout_arg = { .v = &mono_layout };
-static const Arg tiling_layout_arg = { .v = &tiling_layout };
+static const Arg mono_layout_arg = { .v = &layouts[2] };
+static const Arg tiling_layout_arg = { .v = &layouts[0] };
 static const Arg togglebar_args = { 0 };
-
-void togglemono(const Arg *args) {
+void
+togglemono(const Arg *args) 
+{
     if (strcmp(selmon->ltsymbol, "Tiling") == 0) {
       setlayout(&mono_layout_arg);
     } else {
@@ -2202,14 +2202,18 @@ void togglemono(const Arg *args) {
     togglebar(&togglebar_args);
 }
 
-size_t nclient(Monitor *m) { 
+size_t 
+nclient(Monitor *m) 
+{ 
   size_t n;
   Client *c;
   for(n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++);
   return n;
 }
 
-void auto_nmaster(Monitor *m) {
+void
+auto_nmaster(Monitor *m) 
+{
     if (m->auto_nmaster == 0) 
       return;
     int nmaster;
@@ -2224,7 +2228,9 @@ void auto_nmaster(Monitor *m) {
     drawbar(m);
 }
 
-void toggle_auto_nmaster(const Arg *args) {
+void
+toggle_auto_nmaster(const Arg *args)
+{
   if (selmon->auto_nmaster) {
     selmon->auto_nmaster = 0;
     selmon->nmaster = 1;
