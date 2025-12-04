@@ -1004,6 +1004,7 @@ void
 incnmaster(const Arg *arg)
 {
 	selmon->nmaster = MAX(selmon->nmaster + arg->i, 0);
+  selmon->auto_nmaster = 0;
 	arrange(selmon);
 }
 
